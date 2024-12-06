@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="">
     <nav class="border-b-[1px] w-full flex justify-between  px-6 py-3 z-[3] fixed bg-white top-0 mb-[4.5%]">
         <div class="flex  gap-2 items-center">
             <img src="download.png" alt="" class="w-[30px] object-contain">
@@ -138,7 +138,7 @@
                 
             </div>
         </div>
-        <div class="bg-gray-200 flex-1  mt-[4.5%]  min-h-screen relative px-40">
+        <div class="bg-gray-200 flex-1  mt-[4.5%]  max-h-[90vh] overflow-y-scroll relative px-40">
             <div class="bg-white mt-[20px] rounded-md shadow-md">
                 <div class="bg-white flex items-center justify-center p-[10px] rounded-full">
                     <img src="profile pic.jpg" alt="" class="w-[40px] rounded-full">
@@ -186,16 +186,32 @@
                     </div>
                 </div>
                 <div class="rounded-md border-2 relative group w-[120px] h-full cursor-pointer">
-                    <img src="sololeveling.jpeg" alt="" class="w-[120px] h-full object-cover rounded-md">
-                    <div class="absolute inset-0 bg-slate-900/20  hidden rounded-md  group-hover:flex"></div>
+                    <img src="sololeveling.jpeg" alt="" class="w-[120px] h-full object-cover rounded-md z-[1]">
+                    <img src="profile pic.jpg" alt="" class="absolute h-[40px] w-[40px] bg-blue-600 p-1 rounded-full top-2 left-2">
+                    <div class="absolute inset-0 bg-slate-900/20  hidden rounded-md  group-hover:flex z-[2]"></div>
+                    <p class="absolute bottom-2 text-white font-bold left-2 z-[1]">
+                        Jinwoo Son
+                  </p>
                 </div>
                 <div  class="rounded-md border-2 relative group w-[120px] h-full cursor-pointer">
-                    <img src="goku.jpeg" alt="" alt="" class="w-[120px] h-full object-cover rounded-md">
-                   
-                    <div class="absolute inset-0 bg-slate-900/20  hidden rounded-md  group-hover:flex"></div>
+                    <img src="goku.jpeg" alt="" alt="" class="w-[120px] h-full object-cover rounded-md z-[1]">
+                    <img src="profile pic.jpg" alt="" class="absolute h-[40px] w-[40px] rounded-full top-2 left-2 bg-blue-600 p-1">
+                    <div class="absolute inset-0 bg-slate-900/20  hidden rounded-md  group-hover:flex z-[2]"></div>
+                    <p class="absolute bottom-2 text-white font-bold left-2 z-[1]">
+                        GOKU 
+                  </p>
+                    
                 </div>
-                <div>
+                <div class="relative group cursor-pointer">
                     <img src="gojo.jpeg" alt="" class="w-[120px] h-full object-cover rounded-md">
+                    <div class="absolute w-[40px] h-[40px] bg-blue-600 p-1 left-2 top-2 rounded-full z-[1]">
+                        <img src="profile pic.jpg" alt="" class="w-full h-full rounded-full">
+                    </div>
+                    <div class="absolute bg-slate-900/20 hidden inset-0 group-hover:flex z-[2]">
+                    </div>
+                    <p class="absolute bottom-2 text-white font-bold left-2 z-[1]">
+                        GOJO
+                  </p>
                 </div>
                 <div class="rounded-md border-2 relative group w-[120px] h-full cursor-pointer">
                     <img src="pubg.jpeg" alt="" class="w-[120px] h-full object-cover rounded-md">
@@ -204,24 +220,42 @@
                     </div>
                     
                     <div class="absolute inset-0 bg-slate-900/20  hidden rounded-md  group-hover:flex z-[3]"></div>
-                    <p class="absolute bottom-2 text-white font-bold text-sm pl-4">Faraz Ayaz Khan</p>
+                    <p class="absolute bottom-2 text-white font-bold text-sm left-2">Faraz Ayaz Khan</p>
                 </div>
                 
             </div>
-            <div class="border-2 border-black h-[180px] w-[120px] relative group">
+            <!-- <div class="border-2 border-black h-[180px] w-[120px] relative group">
                <img src="profile pic.jpg" alt="" class="h-full w-full object-cover">
                <div class="absolute inset-0 bg-slate-900/20 hidden group-hover:block z-[2]"></div>
                <div class="h-[50px] w-full absolute bg-white bottom-0 flex flex-col items-center justify-center">
-                <!-- icons -->
-               <div class=" p-2 rounded-full mt-[-30px] bg-white z-[1]">
+                icons
+               <!-- <div class=" p-2 rounded-full mt-[-30px] bg-white z-[1]">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                   </svg>
                </div>
-                 <!-- heading -->
-                  <h1 class="text-sm font-bold">Create Story</h1>
-               </div>
-            </div>
+                 heading -->
+                  <!-- <h1 class="text-sm font-bold">Create Story</h1>
+               </div> -->
+            <!-- </div> -->
+             <div class="bg-white">
+                <div class=" flex gap-2 p-3">
+                    <img src="profile pic.jpg" alt="" class="w-[50px] rounded-full">
+                    <div>
+                        <p class="font-bold">Faraz Ayaz</p>
+                        <p class="text-xs">4 hours ago</p>
+                    </div>
+    
+    
+                 </div>
+                 <div class=" space-y-[15px] p-2">
+                    <h1 class="font-bold">THIS IS MY PROFILE PICTURE</h1>
+                    <img src="profile pic.jpg" alt="">
+                
+                </div>
+                 
+             </div>
+
         </div>
          
         <div class="bg-gray-200  sticky pt-[4.5%]  right-0 w-[20%] space-y-[15px]">
@@ -238,12 +272,19 @@
             <p class="font-bold">HAMZA</p>
             <p class="font-bold">HAMMAD</p>
         </div>
-        <div>
-            
-        </div>
-       
+        <div>     
+        </div>      
     </div>
-    
+
+    <!-- <div class="bg-red-400 min-h-screen p-16">
+        <div class="bg-white p-4 rounded-md shadow-xl h-[400px] w-[400px] overflow-y-hidden">
+          <h1>Content</h1>
+          <h1>Content</h1>
+          <h1>Content</h1>
+          <h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1><h1>Content</h1>
+        </div>
+    </div>
+     -->
   
 
 </body>
